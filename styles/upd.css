@@ -1,0 +1,106 @@
+body{
+    background-color: #bbf0f3;
+    background-image: linear-gradient(315deg, #bbf0f3 0%, #f6d285 74%);
+}
+input[type=password], .text-login{
+    margin:9px;
+    width:16%;
+}
+input[type=text], input[type=date], input[type=tel], input[type=number]{
+    width:50%;
+    border-style: hidden;
+    box-shadow: 2px 2px 3px grey;
+    border-radius: 3px;
+    height: 60px;
+}
+nav{
+    position:fixed;
+    display: flex;
+    height: 55px;
+    background-color:white;
+    width:100%;
+    margin:0;
+    font-size: 15px;
+    justify-content:space-between;
+    z-index:100; 
+}
+
+#logo{
+    display: flex;
+    height: 100%;
+    padding: 0 18px;
+    align-items: center;
+}
+#logo img{
+    height:50px;
+}
+#logo:hover{
+    opacity: 80%;
+}
+nav ul a{
+    padding:19px 41px;
+    color:#3434a5;
+    margin:13px;
+    text-decoration: none;
+}
+nav ul a:visited{
+    border-bottom-style: solid;
+    border-bottom-color: yellow;
+}
+nav ul a:hover{
+    opacity:75%;
+}
+ul{
+    margin-left:10px;
+    display: flex;
+    flex-basis:40%;
+    align-items: center;
+    list-style: none;
+    height:100%;
+}
+.fields{
+    margin-top:400px;
+    width: 100%;
+    height: 1000px;
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.modal{
+    height:1000%;
+    width:80%;
+    margin-top: 218px;
+    padding: 0 20px;
+    border-radius: 3px;
+    position: static;
+}
+form{
+    margin:0 auto;
+    padding: 11px 14px 0px 14px;
+    width:auto;
+    border-radius: 8px;
+    height: 100%;
+}
+input[type=submit]{
+    margin:9px;
+    color:white;
+    background-color: #3434a5;
+    border-style: none;
+    box-shadow: 2px 1px 6px 1px #3434a5;
+    height: 37px;
+    width: auto;
+}
+input[type=text]{
+    background-color: whitesmoke;
+    padding: 8px;
+}
+fieldset{
+    text-align: center;
+    padding:20px;
+    border-style: solid;
+    border-radius: inherit;
+    border-color: white;
+ }
+ 

@@ -1,0 +1,205 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body {
+    font-size:  15px;
+    font-family: Arial;
+    color: black;
+    background-color: silver;
+}
+
+nav{
+    position:fixed;
+    display: flex;
+    height: 55px;
+    background-color:white;
+    width:100%;
+    margin:0;
+    font-size: 15px;
+    justify-content:space-between;
+    z-index:100; 
+}
+
+#logo{
+    display: flex;
+    height: 100%;
+    padding: 0 18px;
+    align-items: center;
+}
+#logo img{
+    height:50px;
+}
+#logo:hover{
+    opacity: 80%;
+}
+nav ul a{
+    padding:19px 41px;
+    color:#3434a5;
+    margin:13px;
+    text-decoration: none;
+}
+nav ul a:visited{
+    border-bottom-style: solid;
+    border-bottom-color: yellow;
+}
+nav ul a:hover{
+    opacity:75%;
+}
+ul{
+    margin-left:10px;
+    display: flex;
+    flex-basis:40%;
+    align-items: center;
+    list-style: none;
+    height:100%;
+}
+input[type=password],input[type=text]{
+    margin:9px;
+    width:16%;
+}
+input[type=submit]{
+    margin:9px;
+    color:white;
+    background-color: #3434a5;
+    border-style: none;
+    box-shadow: 2px 1px 6px 1px #3434a5;
+    height: 37px;
+    width:5%;
+}
+input[type=submit]:hover{
+    cursor: pointer;
+}
+.banner{
+    height:60vh;
+    display:flex;    
+    flex-direction: column;
+    background-image: url(../img/homer.jpg);
+    background-size: cover;
+    background-attachment:fixed;
+    background-position:center;
+    background-blend-mode:overlay;
+}
+.wrapper { 
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    border-left: solid 9px #FFB833 ;
+    border-right: solid 9px #FFB833 ;
+    padding:60px 120px 50px 120px;
+    background-color: rgba(0,0,0,0.6);
+
+    
+}
+.wrapper h3, .wrapper p{
+    color:white;
+}
+.wrapper button{
+    border: 3px solid #3434a5;
+    color:white;
+    border-radius: 20px;
+    height:30px;
+    width: 30%;
+    background-color: transparent;
+}
+.wrapper button:hover{
+    cursor:pointer;
+    background-color:#3434a5 ;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top:5vh;
+}
+.card{
+    font-size: 13px;
+    flex-basis:30%;
+    height:60vh;
+    display: flex;
+    flex-direction: column;
+    justify-items:center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow: 2px 2px 3px 2px grey;
+    background-color: whitesmoke;
+    border: solid 0.5px lightgray;
+}
+.card img{
+    width: 100%;
+    height:70%;
+    padding: 10px 5px 10px 5px ;
+    
+}
+.popup{
+    background: rgba(0,0,0,0.6);
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    transition:0.4s;
+    display:none;
+    justify-content: center;
+    align-items:center;
+}
+.signup-pop{
+    height:360px;
+    width:500px;
+    background: white;
+    padding:20px;
+    border-radius:5px;
+    position:relative;
+}
+.close{
+    position: absolute;
+    font-size: 35px;
+    top:-3px;
+    right:3px;
+}
+.close:hover, .close:focus{
+    color:red;
+    cursor:pointer;    
+}
+.user-icon{
+    margin:20px auto;
+    display: block;
+    height:20%;
+    width:20%;
+}
+.signup-pop input[type=password], .signup-pop input[type=text]{
+    margin:20px auto;
+    display:block;
+    padding:8px;
+    height:30px;
+    width:56%;
+
+}
+.signup-pop input[type=submit]{
+    padding:8px;
+    margin:20px auto;
+    text-emphasis: bolder;
+    height: 35px;
+    width: 20%;
+    display:block;
+    
+}
+
+footer{
+    bottom: 0;
+    height:55px;
+    width: auto;
+    margin-top:5%;
+    justify-content: space-between;
+    flex-basis: 50%;
+    display: flex;
+    background-color: white;
+}
+footer .contact img{
+    height:65%;
+    flex:1;
+}
+
